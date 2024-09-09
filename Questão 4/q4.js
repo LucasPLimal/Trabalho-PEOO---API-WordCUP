@@ -1,0 +1,1 @@
+// QUESTÃO: Fazer uma requisição para a API e exibir uma tabela de classificação dos grupos da Copa do Mundo.

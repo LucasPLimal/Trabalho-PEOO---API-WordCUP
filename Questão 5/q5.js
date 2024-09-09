@@ -1,3 +1,5 @@
+// QUESTÃO: Fazer uma requisição para a API e exibir o resultado final da Copa do Mundo, incluindo o campeão e o vice-campeão.
+
 // Faz a requisição para a API
 fetch('https://worldcupjson.net/matches')
   .then(response => response.json())

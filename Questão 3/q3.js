@@ -1,3 +1,5 @@
+// QUESTÃO: Fazer uma requisição para a API e exibir todos os jogos de uma equipe específica.
+
 const url_teams = 'https://worldcupjson.net/teams';
 
 fetch(url_teams)

@@ -1,3 +1,5 @@
+// QUESTÃO: Fazer uma requisição para a API e exibir os detalhes de um jogo específico.
+
 const matches = 'https://worldcupjson.net/matches';
 fetch(matches)
   .then(response => response.json())
