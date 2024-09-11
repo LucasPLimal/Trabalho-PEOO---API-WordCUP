@@ -1,26 +1,20 @@
 // QUESTÃO: Fazer uma requisição para a API e exibir o resultado final da Copa do Mundo, incluindo o campeão e o vice-campeão.
 
-// Faz a requisição para a API
-fetch('https://worldcupjson.net/matches')
-  .then(response => response.json())
-  .then(data => {
-    // Encontra o jogo da final
-    const finalMatch = data.find(match => match.stage_name === 'Final');
-    
-    // Verifica se a final ocorreu e exibe os resultados
-    if (finalMatch && finalMatch.winner) {
-      const champion = finalMatch.winner;
-      const homeTeam = finalMatch.home_team.name;
-      const awayTeam = finalMatch.away_team.name;
-      const viceChampion = homeTeam === champion ? awayTeam : homeTeam;
-      
-      document.getElementById('resultado').innerHTML = 
-        Campeão: ${champion} <br> Vice-Campeão: ${viceChampion};
-    } else {
-      document.getElementById('resultado').textContent = "A final ainda não ocorreu.";
-    }
-  })
-  .catch(error => {
-    document.getElementById('resultado').textContent = "Erro ao obter os dados.";
-    console.error('Erro ao obter os dados:', error);
-  });
+function puxar_Final() {
+  const url = 'https://worldcupjson.net/matches'
+
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {mostrar_final(data.at(-1))})
+    .catch(error => console.error("Erro ao buscar os jogos:", error));  // Mensagem de erro no console.
+}  // Faz requesição para a API, e puxa a função principal.
+
+function mostrar_final(match) {
+  const resultado = document.getElementById("resultado")
+  resultado.innerHTML = '';
+
+  const data = new Date(match.datetime);
+  
+
+}
+
