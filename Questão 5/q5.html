@@ -1,17 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final da Copa de 2022</title>
+    <title>Resultado da Copa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            background-color: #fe0151de;
+            color: #000; /* Texto em preto */
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        h1 {
+            margin-top: 0;
+        }
+        button {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #ddd;
+            margin: 20px 0;
+        }
+        .flag {
+            width: 40px;
+            height: auto;
+            vertical-align: middle;
+        }
+    </style>
 </head>
 <body>
-  
-    <h1>Final da Copa de 2022</h1>
-    <button type="button" onclick="puxar_Final()">Resultado</button>
+    <div class="container">
+        <h1>Final da Copa de 2022</h1>
+        <button type="button" onclick="puxar_Final()">Resultado</button>
+        <div id="resultado"></div>
+    </div>
 
-    <div id="resultado"></div>
-<script src="q5.js"></script>
+    <script src="q5.js"></script>
 </body>
 </html>
