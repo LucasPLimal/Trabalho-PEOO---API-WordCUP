@@ -53,7 +53,7 @@ function lista(classificacao) {
         tabela.style.borderWidth = "1px";
         tabela.style.borderColor = "#555";
         tabela.style.borderStyle = "solid";
-        tabela.style.background = "#fe0151de";
+        tabela.style.background = "#ffefef";
         tabela.style.textAlign = "center";
         tabela.style.width = "100%";
 

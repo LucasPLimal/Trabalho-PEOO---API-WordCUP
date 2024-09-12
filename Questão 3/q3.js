@@ -35,6 +35,7 @@ function list_matches(matches) {
       descrição.innerHTML = `
         <p><b>Estádio:</b> ${match.venue}</p>
         <p><b>Localização:</b> ${match.location}</p>
+        <p><b>Data:</b> ${match.datetime}</p>
         <p>(<b>Casa:</b> ${match.home_team_country})  x   
         (<b>Visitante:</b> ${match.away_team_country})</p>
         <p><b>Vencedor:</b> ${match.winner}</p>
