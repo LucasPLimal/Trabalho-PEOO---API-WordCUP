@@ -55,7 +55,7 @@ function lista(classificacao) {
         tabela.style.borderStyle = "solid";
         tabela.style.background = "#fe0151de";
         tabela.style.textAlign = "center";
-        tabela.style.width = "50%";
+        tabela.style.width = "100%";
 
         tabelas.appendChild(tabela);
     });
