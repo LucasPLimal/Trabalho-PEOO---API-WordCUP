@@ -5,7 +5,7 @@ function puxar_Final() {
 
   fetch(url)
     .then(response => response.json())
-    .then(data => {mostrar_final(data.at(-1))})
+    .then(data => {mostrar_final(data.at(-1))}) // Acessa o vetor das datas e pega a partida da última data.
     .catch(error => console.error("Erro ao buscar os jogos:", error));  // Mensagem de erro no console.
 }  // Faz requesição para a API, e puxa a função principal.
 
